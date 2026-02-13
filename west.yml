@@ -1,0 +1,40 @@
+manifest:
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+    - name: hydrogreen
+      url-base: https://github.com/hydrogreenpollub
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: main
+      import:
+        name-allowlist:
+          - cmsis
+          - segger
+          - hal_stm32
+          - hal_esp32
+
+    - name: zephyr-can-converter-unit
+      remote: hydrogreen
+      revision: main
+      path: zephyr-can-converter-unit
+
+    - name: zephyr-lighting-control-unit
+      remote: hydrogreen
+      revision: main
+      path: zephyr-lightning-control-unit
+
+    - name: zephyr-steering-wheel-unit
+      remote: hydrogreen
+      revision: main
+      path: zephyr-steering-wheel
+
+    - name: zephyr-fuel-cell-control-unit
+      remote: hydrogreen
+      revision: main
+      path: zephyr-fuel-cell-control-unit
+
+  self:
+    path: manifest
