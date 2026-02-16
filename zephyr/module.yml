@@ -1,4 +1,0 @@
-name: hydrogreen_platform
-build:
-  settings:
-    board_root: .

@@ -11,29 +11,34 @@ manifest:
       revision: main
       import:
         name-allowlist:
-          - cmsis
-          - segger
+          - cmsis_6
           - hal_stm32
           - hal_esp32
+          - segger
+          - nanopb
 
     - name: zephyr-can-converter-unit
       remote: hydrogreen
       revision: main
+      submodules: true
       path: zephyr-can-converter-unit
 
     - name: zephyr-lighting-control-unit
       remote: hydrogreen
       revision: main
+      submodules: true
       path: zephyr-lighting-control-unit
 
     - name: zephyr-steering-wheel-unit
       remote: hydrogreen
       revision: main
+      submodules: true
       path: zephyr-steering-wheel-unit
 
     - name: zephyr-fuel-cell-control-unit
       remote: hydrogreen
       revision: main
+      submodules: true
       path: zephyr-fuel-cell-control-unit
 
   self:
