@@ -3,7 +3,10 @@ import subprocess
 import sys
 import venv
 
-WORKSPACE_DIR = "zephyr-hydrogreen-workspace"
+default_name = "zephyr-hydrogreen-workspace"
+user_input = input(f"Enter workspace name [{default_name}]: ").strip()
+
+WORKSPACE_DIR = user_input if user_input else default_name
 MANIFEST_URL = "https://github.com/hydrogreenpollub/zephyr-manifest.git"
 MANIFEST_DEST = "zephyr-manifest"
 
@@ -43,5 +46,7 @@ if os.path.exists("zephyr"):
     req_file = os.path.join("zephyr", "scripts", "requirements.txt")
     if os.path.exists(req_file):
         run(f"{pip_exe} install -r {req_file}")
+
+run(f"{west_exe} sdk install -t arm-zephyr-eabi")
 
 print("\n=== Setup Complete ===")
