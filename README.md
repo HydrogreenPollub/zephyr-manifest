@@ -27,11 +27,12 @@ To initialize the full workspace, navigate to your projects folder and run the b
 
 ### Windows (powershell)
 ```powershell
-irm https://raw.githubusercontent.com/HydrogreenPollub/zephyr-manifest/refs/heads/main/bootstrap.py | python
+curl -o bootstrap.py https://raw.githubusercontent.com/HydrogreenPollub/zephyr-manifest/refs/heads/main/bootstrap.py
+python bootstrap.py
 ```
 
 ### Linux / macOS (bash)
-```bash
+```shell
 curl -fsSL https://raw.githubusercontent.com/HydrogreenPollub/zephyr-manifest/refs/heads/main/bootstrap.py | python3
 ```
 
