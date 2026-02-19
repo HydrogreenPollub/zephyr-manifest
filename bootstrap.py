@@ -48,5 +48,6 @@ if os.path.exists("zephyr"):
         run(f"{pip_exe} install -r {req_file}")
 
 run(f"{west_exe} sdk install -t arm-zephyr-eabi")
+run(f"{west_exe} sdk install -t xtensa-espressif_esp32s3_zephyr-elf")
 
 print("\n=== Setup Complete ===")
