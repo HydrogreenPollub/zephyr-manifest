@@ -17,6 +17,11 @@ manifest:
           - segger
           - nanopb
 
+    - name: mcuboot
+      remote: zephyrproject-rtos
+      revision: main
+      path: bootloader/mcuboot
+
     - name: zephyr-can-converter-unit
       remote: hydrogreen
       revision: main
