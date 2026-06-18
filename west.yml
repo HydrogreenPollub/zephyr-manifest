@@ -16,6 +16,7 @@ manifest:
           - hal_espressif
           - segger
           - nanopb
+          - lvgl
 
     - name: mcuboot
       remote: zephyrproject-rtos
