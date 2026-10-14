@@ -29,6 +29,16 @@ manifest:
       submodules: true
       path: zephyr-can-converter-unit
 
+    - name: lib-can-definitions
+      remote: hydrogreen
+      revision: main
+      path: modules/can-definitions
+
+    - name: lib-peripherals
+      remote: hydrogreen
+      revision: main
+      path: modules/peripherals
+
     - name: zephyr-lighting-control-unit
       remote: hydrogreen
       revision: main
