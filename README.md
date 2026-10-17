@@ -33,7 +33,8 @@ python bootstrap.py
 
 ### Linux / macOS (bash)
 ```shell
-curl -fsSL https://raw.githubusercontent.com/HydrogreenPollub/zephyr-manifest/refs/heads/main/bootstrap.py | python3
+curl -fsSL -o bootstrap.py https://raw.githubusercontent.com/HydrogreenPollub/zephyr-manifest/refs/heads/main/bootstrap.py
+python3 bootstrap.py
 ```
 
 ## Workspace structure
