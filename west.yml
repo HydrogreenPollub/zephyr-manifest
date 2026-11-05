@@ -57,5 +57,11 @@ manifest:
       submodules: true
       path: zephyr-fuel-cell-control-unit
 
+    - name: zephyr-telemetry-unit
+      remote: hydrogreen
+      revision: main
+      submodules: true
+      path: zephyr-telemetry-unit
+
   self:
     path: zephyr-manifest
