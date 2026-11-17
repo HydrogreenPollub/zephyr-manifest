@@ -32,12 +32,12 @@ manifest:
     - name: lib-can-definitions
       remote: hydrogreen
       revision: main
-      path: modules/can-definitions
+      path: lib-can-definitions
 
     - name: lib-peripherals
       remote: hydrogreen
       revision: main
-      path: modules/peripherals
+      path: lib-peripherals
 
     - name: zephyr-lighting-control-unit
       remote: hydrogreen
