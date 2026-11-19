@@ -23,12 +23,6 @@ manifest:
       revision: main
       path: bootloader/mcuboot
 
-    - name: zephyr-can-converter-unit
-      remote: hydrogreen
-      revision: main
-      submodules: true
-      path: zephyr-can-converter-unit
-
     - name: lib-can-definitions
       remote: hydrogreen
       revision: main
@@ -38,6 +32,12 @@ manifest:
       remote: hydrogreen
       revision: main
       path: lib-peripherals
+
+    - name: zephyr-can-converter-unit
+      remote: hydrogreen
+      revision: main
+      submodules: true
+      path: zephyr-can-converter-unit
 
     - name: zephyr-lighting-control-unit
       remote: hydrogreen
